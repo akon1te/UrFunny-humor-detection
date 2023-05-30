@@ -1,15 +1,8 @@
 import numpy as np
 from pathlib import Path
-
-import torch
-import torch.nn as nn
-from transformers import AutoTokenizer, RobertaForSequenceClassification
-from torch.utils.data import Dataset, DataLoader
-
+from torch.utils.data import Dataset
 from moviepy.editor import *
-
 from pickle_loader import load_pickle
-
 from typing import Tuple, List, Dict
 
 VIDEO_PATH = Path('../data') / 'urfunny2_video'
@@ -17,7 +10,7 @@ AUDIO_PATH = Path('../data') / 'urfunny2_audio'
 DATA_PATH = Path('../sdk_features/')
 
 class HumorDataset(Dataset):
-
+    
     def __init__(self):
 
         self.origin_text = load_pickle(DATA_PATH / "language_sdk.pkl")
