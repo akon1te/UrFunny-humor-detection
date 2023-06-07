@@ -1,2 +1,2 @@
-# AI-Video-summarizer
-HSE Course paper about evealing the main idea of ​​the videos using machine learning models
+# UrFunny-humor-detection
+3rd grade HSE Course paper about detecting humor in the short videos using ML/DL models
